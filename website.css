@@ -1,0 +1,132 @@
+/* *{
+    box-sizing: border-box;
+} */
+body{
+    margin: 0px; 
+    height: 2000px;
+    /* background: rgba(8, 66, 238, 0.63); */
+    position: relative;
+    background-color: black;
+    /* box-sizing: border-box; */
+    /* box-sizing: border-box; */
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    /* border-radius: 0px 0px 30% 30%; */ /*Looked neat*/ 
+   
+}
+.headerVideo{
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    justify-content: center;
+    align-items:center;
+}
+video{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.overlay{  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: text 5s infinite;
+} 
+.textSwitch{
+    margin: auto;
+    font-size: 5rem;
+    color: rgb(196, 209, 220);
+    animation: textAnimation 5s infinite;
+}
+@keyframes text{
+    0%, 100%{
+        transfrom: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+}
+
+.wrapper{
+    background: url(videos/background_img.png);
+}
+/* .mainBody{
+    position: relative;
+    height: 100%;
+    display: flex;
+} */
+.intro{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 5% 5% 0% 5%;
+    border-radius: 10px 10px 10px 10px;
+    background: black;
+    color: white;
+    font-size: 30px;
+}
+.intro h3{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+.text{
+    letter-spacing: 0.3px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.techStackImages{
+     max-height: 800px;
+}
+.techStackImages h2{
+    display: block;
+    font-size: 300%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient(to left, beige,  rgb(225, 225, 30));
+}
+.grid{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto; /*3  columns*/
+    grid-column-gap: 20%;
+    grid-row-gap: 40px;
+
+}
+.grid .item{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.grid img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectsHeader{
+    margin-top: 130px;
+    font-size: 30px;
+    height: 100px;
+    color: rgb(12, 234, 208);
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, black, orange);
+
+}
+

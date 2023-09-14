@@ -24,4 +24,12 @@ function toggleText() {
         }
         typeText();
     });
-  
+    let array = {};
+
+    array = document.querySelectorAll("item");
+        
+    // for(let i = 0; i < array.length; i++){
+    //     array[i].style.background = "green";
+    // }
+    array.forEach(node => { node.style.height = "4000"; });
+
